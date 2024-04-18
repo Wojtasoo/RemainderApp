@@ -1,0 +1,56 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/coordinatorLayout"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/background_mod"
+    android:fitsSystemWindows="true"
+    tools:context=".AddEvent"
+    tools:visibility="visible">
+
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:padding="16dp"
+        tools:context=".MainActivity">
+
+        <!-- Event Name Input -->
+
+        <EditText
+            android:id="@+id/editTextEventName"
+            android:layout_width="368dp"
+            android:layout_height="48dp"
+            android:layout_alignParentTop="true"
+            android:layout_marginTop="14dp"
+            android:hint="Event Name" />
+
+        <EditText
+            android:id="@+id/editTextDate"
+            android:layout_width="368dp"
+            android:layout_height="48dp"
+            android:layout_below="@id/editTextEventName"
+            android:layout_marginTop="4dp"
+            android:hint="Date (YYYY-MM-DD)" />
+
+        <EditText
+            android:id="@+id/editTextTime"
+            android:layout_width="368dp"
+            android:layout_height="48dp"
+            android:layout_below="@id/editTextDate"
+            android:layout_marginTop="2dp"
+            android:hint="Time (HH:MM)" />
+
+        <Button
+            android:id="@+id/buttonSave"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/editTextTime"
+            android:layout_marginTop="16dp"
+            android:text="Save"
+            android:fontFamily="@font/montserrat_bold" />
+
+    </RelativeLayout>
+</androidx.constraintlayout.widget.ConstraintLayout>
